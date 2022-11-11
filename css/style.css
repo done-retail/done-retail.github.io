@@ -1,0 +1,138 @@
+@font-face {
+	font-family: Intro;
+	font-weight: 900;
+	font-style: normal;
+	src: local("Intro"),
+		 url(../Intro.woff2) format('woff2'),
+		 url(../Intro.woff) format('woff'),
+		 url(../Intro.eot) format('eot');
+	font-display: swap;		 
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {	
+	font-family: Intro, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+/* =================================== GLOBAL ====================================== */
+
+.site-wrapper {
+	height: 100%;
+	text-align: center;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+
+/* =================================== TOP ====================================== */
+
+.logo {
+	margin-top: 15px;
+	margin-bottom: 23px;
+}
+
+.top__title {
+	font-weight: 900;
+	font-size: 16px;
+}
+
+.line {
+	width: 163px;
+	height: 3px;
+	background-color: #000;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
+
+/* =================================== MIDDLE ====================================== */
+
+.list__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 67px;
+	background-color: rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	position: relative;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.list__link:hover {
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.list__link:not(last-child) {
+	margin-bottom: 18px;
+}
+
+.list__link--tg::before {
+	content: url('../img/tg.svg');
+	position: absolute;
+	left: 20px;
+}
+
+.list__link--boss::before {
+	content: url('../img/boss.svg');
+	position: absolute;
+	left: 20px;
+}
+
+.list__link--vk::before {
+	content: url('../img/vk.svg');
+	position: absolute;
+	left: 20px;
+}
+
+.list__link--av::before {
+	content: url('../img/av.svg');
+	position: absolute;
+	left: 20px;
+}
+
+.link__text {
+	font-weight: 900;
+	font-size: 16px;
+	color: #fff;
+}
+
+
+
+.copy {
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 10px;
+	color: rgba(0, 0, 0, 0.59);
+}
